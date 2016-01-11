@@ -24,14 +24,18 @@
   "keywords": [
     "array",
     "array-map",
+    "array-mapcat",
     "arraymap",
     "auto-curried",
     "collect",
     "concat",
-    "mapcat",
-    "array-mapcat",
     "curried",
-    "map"
+    "flat",
+    "flat-map",
+    "flat_map",
+    "flatmap",
+    "map",
+    "mapcat"
   ],
   "license": "MIT",
   "main": "index.js",
