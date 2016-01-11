@@ -1,0 +1,55 @@
+{
+  "name": "array-mapcat",
+  "description": "Curried function deriving new array values by applying provided function to each item/index of provided array then applying `concat` to the results. Fast and compatible with modern or old browsers.",
+  "version": "0.0.0",
+  "author": "Wil Moore III <wil.moore@wilmoore.com>",
+  "bugs": {
+    "url": "https://github.com/wilmoore/array-mapcat.js/issues"
+  },
+  "dependencies": {
+    "arraymap": "^0.1.2",
+    "curry2": "^0.1.0"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.4.0",
+    "fixpack": "^2.2.0",
+    "istanbul": "^0.3.13",
+    "nodemon": "^1.3.7",
+    "standard": "^3.7.1",
+    "tap-spec": "^2.2.2",
+    "tape": "^4.0.0",
+    "tape-catch": "^1.0.4"
+  },
+  "homepage": "https://github.com/wilmoore/array-mapcat.js",
+  "keywords": [
+    "array",
+    "array-map",
+    "arraymap",
+    "auto-curried",
+    "collect",
+    "concat",
+    "mapcat",
+    "array-mapcat",
+    "curried",
+    "map"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "preferGlobal": false,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilmoore/array-mapcat.js"
+  },
+  "scripts": {
+    "cover": "istanbul cover test.js",
+    "dependency-check": "dependency-check ./package.json && dependency-check ./package.json --unused --no-dev",
+    "dev": "nodemon -x 'npm run test --silent' -e 'js json'",
+    "fixpack": "fixpack",
+    "release-major": "npm version major && git push --follow-tags && npm publish",
+    "release-minor": "npm version minor && git push --follow-tags && npm publish",
+    "release-patch": "npm version patch && git push --follow-tags && npm publish",
+    "standard": "standard",
+    "test": "npm run dependency-check && npm run standard --silent && node test.js | tap-spec"
+  }
+}
