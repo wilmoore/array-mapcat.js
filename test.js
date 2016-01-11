@@ -17,7 +17,7 @@ var mapcat = require('./')
  */
 
 var splitword = function (sentance) { return sentance.split(/\s+/) }
-var sentances = [ 'two birds', 'three green peas' ]
+var sentences = [ 'two birds', 'three green peas' ]
 var listmodel = [
   { list: [1, 2, 3] },
   { list: [4, 5, 6] },
@@ -29,7 +29,7 @@ var listmodel = [
  */
 
 test('mapcat()', function (t) {
-  t.deepEqual(mapcat(splitword, sentances), ['two', 'birds', 'three', 'green', 'peas'])
+  t.deepEqual(mapcat(splitword, sentences), ['two', 'birds', 'three', 'green', 'peas'])
   t.deepEqual(mapcat('list', listmodel), [1, 2, 3, 4, 5, 6, 7, 8, 9])
   t.end()
 })

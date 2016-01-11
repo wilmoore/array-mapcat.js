@@ -24,9 +24,9 @@ Optionally, a dot-notation formatted string may be provided for item property ac
 ```js
 var mapcat = require('array-mapcat')
 var splitword = (sentance) => sentance.split(/\s+/)
-var sentances = [ 'two birds', 'three green peas' ]
+var sentences = [ 'two birds', 'three green peas' ]
 
-mapcat(splitword, sentances)
+mapcat(splitword, sentences)
 //=> ['two', 'birds', 'three', 'green', 'peas']
 ```
 
