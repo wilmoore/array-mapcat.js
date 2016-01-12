@@ -15,7 +15,8 @@ npm install array-mapcat --save
 
 ## Overview
 
-Optionally, a dot-notation formatted string may be provided for item property access.
+- This is similar to doing `[].concat.apply([], [].map())` but in a more functional and compositionally friendly way.
+- Optionally, a dot-notation formatted string may be provided for item property access.
 
 ## API Example
 
@@ -77,6 +78,10 @@ listmodel.then(mapcat('list'))
  - [concatMap]
  - [flat_map]
 
+## Alternatives
+
+ - [concat-map]
+
 ## Contributing
 
 > SEE: [contributing.md](contributing.md)
@@ -88,3 +93,4 @@ listmodel.then(mapcat('list'))
 [mapcat]: https://clojuredocs.org/clojure.core/mapcat
 [concatMap]: https://www.haskell.org/hoogle/?hoogle=concatMap
 [flat_map]: http://apidock.com/ruby/Enumerable/flat_map
+[concat-map]: https://www.npmjs.com/package/concat-map
