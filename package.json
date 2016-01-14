@@ -1,7 +1,7 @@
 {
   "name": "array-mapcat",
   "description": "Curried function deriving new array values by applying provided function to each item/index of provided array then applying `concat` to the results. Fast and compatible with modern or old browsers.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "bugs": {
     "url": "https://github.com/wilmoore/array-mapcat.js/issues"
