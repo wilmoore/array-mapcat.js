@@ -15,7 +15,7 @@ npm install array-mapcat --save
 
 ## Overview
 
-- This is similar to doing `[].concat.apply([], [].map())` but in a more functional and compositionally friendly way.
+- Similar to `[].concat.apply([], [].map())` but more functional and compositionally friendly.
 - Optionally, a dot-notation formatted string may be provided for item property access.
 
 ## API Example
@@ -81,6 +81,7 @@ listmodel.then(mapcat('list'))
 ## Alternatives
 
  - [concat-map]
+ - [js-mapcat]
 
 ## Contributing
 
@@ -94,3 +95,4 @@ listmodel.then(mapcat('list'))
 [concatMap]: https://www.haskell.org/hoogle/?hoogle=concatMap
 [flat_map]: http://apidock.com/ruby/Enumerable/flat_map
 [concat-map]: https://www.npmjs.com/package/concat-map
+[js-mapcat]: https://www.npmjs.com/package/js-mapcat
