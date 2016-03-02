@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file (keepachangelog.com).
 
+## 0.1.5 - 2016-03-01
+### Fixed
+- Update outdated dependencies.
+
 ## 0.1.4 - 2016-01-13
 ### Added
 - Add js-mapcat to alternatives.
